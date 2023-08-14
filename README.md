@@ -2,7 +2,7 @@
 
 Install script:
 ```sh
-bash <(curl https://raw.githubusercontent.com/Angelillo15/MinecraftPurpleTheme/main/install.sh)
+bash <(curl https://raw.githubusercontent.com/KiroFyzu/ptero-theme/main/install.sh)
 ```
 
 Screenshots:
