@@ -12,4 +12,4 @@ Screenshots:
 # Main Page
 ![Main panel screenshot](https://telegra.ph/file/9f1678a41eba358538dd0.png "Main panel screenshot")
 # Instalation Script
-![Instalation script](https://i.imgur.com/8hFZG5b.png "Instalation script")
+![Instalation script](https://telegra.ph/file/811a2ec97e968fc157124.png "Instalation script")
