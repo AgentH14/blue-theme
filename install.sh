@@ -9,16 +9,16 @@ clear
 
 installTheme(){
     cd /var/www/
-    tar -cvf MinecraftPurpleThemebackup.tar.gz pterodactyl
+    tar -cvf MinecraftBlueThemebackup.tar.gz pterodactyl
     echo "Installing theme..."
     cd /var/www/pterodactyl
-    rm -r MinecraftPurpleTheme
-    git clone https://github.com/KiroFyzu/ptero-theme.git
-    cd MinecraftPurpleTheme
-    rm /var/www/pterodactyl/resources/scripts/MinecraftPurpleTheme.css
+    rm -r MinecraftBlueTheme
+    git clone https://github.com/KiroFyzu/blue-theme.git
+    cd MinecraftBlueTheme
+    rm /var/www/pterodactyl/resources/scripts/MinecraftBlueTheme.css
     rm /var/www/pterodactyl/resources/scripts/index.tsx
     mv index.tsx /var/www/pterodactyl/resources/scripts/index.tsx
-    mv MinecraftPurpleTheme.css /var/www/pterodactyl/resources/scripts/MinecraftPurpleTheme.css
+    mv MinecraftPurpleTheme.css /var/www/pterodactyl/resources/scripts/MinecraftBlueTheme.css
     cd /var/www/pterodactyl
 
     curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
@@ -47,7 +47,7 @@ installThemeQuestion(){
 }
 
 repair(){
-    bash <(curl https://raw.githubusercontent.com/KiroFyzu/ptero-theme/main/repair.sh)
+    bash <(curl https://raw.githubusercontent.com/KiroFyzu/blue-theme/main/repair.sh)
 }
 
 restoreBackUp(){
@@ -60,10 +60,9 @@ restoreBackUp(){
     yarn build:production
     sudo php artisan optimize:clear
 }
-echo "Copyright (c) 2022 Angelillo15 | KiroFyzu"
+echo "Copyright © 2024 AgentH14"
 echo "This program is free software: you can redistribute it and/or modify"
 echo ""
-echo "Website: https://kiro.my.id/"
 echo ""
 echo "[1] Install theme"
 echo "[2] Restore backup"
