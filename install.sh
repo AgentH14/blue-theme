@@ -13,7 +13,7 @@ installTheme(){
     echo "Installing theme..."
     cd /var/www/pterodactyl
     rm -r MinecraftBlueTheme
-    git clone https://github.com/KiroFyzu/blue-theme.git
+    git clone https://github.com/AgentH14/blue-theme.git
     cd MinecraftBlueTheme
     rm /var/www/pterodactyl/resources/scripts/MinecraftBlueTheme.css
     rm /var/www/pterodactyl/resources/scripts/index.tsx
